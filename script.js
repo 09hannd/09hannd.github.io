@@ -16,16 +16,45 @@ function pickQuestion(){
         var number = randInt(0,database.length);
         card = database[number];
         cardType = card.cardType;
-        cardText = card.text.replaceAll("_", "<i>blank</i>");
-        cardId = card.id;
-        
-        var newElm = "<div id='currentQuestion' class='w3-card-4 w3-black w3-margin l' style='width:80%;max-width:350px;'><div class='w3-container w3-center'><br><h5>"+cardText+"</h5><a href='#' class='w3-left w3-section w3-text-green'>Report Error</a></p></div></div>";
-        
-        
         if(cardType == "Q")isQuestion = true;
     }
+    
+    cardText = card.text.replaceAll("_", "<i>blank</i>");
+    cardId = card.id;
+    var newElm = "<div id='currentQuestion' class='w3-card-4 w3-black w3-margin l' style='width:80%;max-width:350px;'><div class='w3-container w3-center'><br><h5>"+cardText+"</h5></div><button class='w3-btn-block w3-green' onclick='pickQuestion();'>Swap <i class='fa fa-refresh'></i></button></div>";
     document.getElementById("qu").innerHTML = newElm;
     document.getElementById("currentQuestion").style.left = window.innerWidth - document.getElementById("currentQuestion").outerWidth / 2;
 }
 
 pickQuestion();
+
+function generateCard(){
+    var number = randInt(0,database.length);
+    card = database[number];
+    return card;
+}
+
+
+
+function pickCards(){
+    var cards = Array();
+    for(var i = 0; i < 5; i++){
+        var card = generateCard();
+        while(card.cardType == "Q"){
+            card = generateCard();
+        }
+        cards.push(card);
+    }
+    
+    for(var i = 0; i < cards.length; i++){
+        card = cards[i];
+        cardText = card.text.replaceAll("_", "<i>blank</i>");
+        cardId = card.id;
+        var newElm = "<div id='"+cardId+"' class='w3-card-4 w3-light-grey w3-margin l' style='width:80%;max-width:350px;'><div class='w3-container w3-center'><br><h5>"+cardText+"</h5></div><button class='w3-btn-block w3-blue'>Choose</button></div>";
+        document.getElementById("ans").innerHTML += newElm;
+    }
+    
+    
+}
+
+pickCards();
