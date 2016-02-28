@@ -16,25 +16,15 @@ body{
 
 h1{
     font-family: Bebas;
-    font-size: 4em;
 }
 
-#answers{
-    width:50%;
-    height:30%;
-    overflow-y:scroll;
-    font-family: Oswald;
-    background:#1f1f21;
-    color:#f7f7f7;
-    font-size:1em;
+/*
+#currentQuestion{
+    position: fixed;
+    width:20%;
+    height:20%;
+    background: transparent;
+    left:50%;
+    margin-left: -10%;
 }
-#questions{
-    width:50%;
-    height:30%;
-    overflow-y:scroll;
-    font-family: Oswald;
-    background:#1f1f21;
-    color:#f7f7f7;
-    margin-top:2%;
-    font-size:1em;
-}
+*/
