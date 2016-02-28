@@ -1,4 +1,4 @@
-[{"id":1,"cardType":"A","text":"Flying sex snakes.","numAnswers":0,"expansion": "Base"},
+var database = [{"id":1,"cardType":"A","text":"Flying sex snakes.","numAnswers":0,"expansion": "Base"},
     {"id":2,"cardType":"A","text":"Michelle Obama's arms.","numAnswers":0,"expansion": "Base"},
     {"id":3,"cardType":"A","text":"German dungeon porn.","numAnswers":0,"expansion": "Base"},
     {"id":4,"cardType":"A","text":"White people.","numAnswers":0,"expansion": "Base"},

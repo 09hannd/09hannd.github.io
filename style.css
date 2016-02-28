@@ -1,0 +1,25 @@
+@font-face{ 
+	font-family: 'Oswald';
+    src: url(fonts/Oswald-Regular.ttf);
+}
+@font-face{ 
+	font-family: 'Bebas';
+    src: url(fonts/BebasNeue.ttf);
+}
+
+
+body{
+    background: #f7f7f7;
+    color: #1f1f21;
+    font-family: Oswald;
+    font-size: 5em;
+}
+
+h1{
+    font-family: Bebas;
+}
+
+#answers{
+    position: absolute;
+    
+}
