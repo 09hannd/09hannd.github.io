@@ -25,8 +25,15 @@ h1{
 
 #content{
     position:absolute;
-    top:0;
+    top:5em;
     left:0;
     width:100%;
     text-align:center;
+    vertical-align: middle;
+    //background:orange;
+}
+
+.card{
+    display: inline-block;
+    vertical-align: middle;
 }

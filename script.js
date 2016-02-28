@@ -21,7 +21,7 @@ function pickQuestion(){
     
     cardText = card.text.replaceAll("_", "<i>blank</i>");
     cardId = card.id;
-    var newElm = "<div id='currentQuestion' class='w3-card-4 w3-black w3-margin l' style='width:80%;max-width:350px;'><div class='w3-container w3-center'><br><h5>"+cardText+"</h5></div><button class='w3-btn-block w3-green' onclick='pickQuestion();'>Swap <i class='fa fa-refresh'></i></button></div>";
+    var newElm = "<div id='currentQuestion' class='w3-card-4 w3-black w3-margin card' style='width:80%;max-width:350px;'><div class='w3-container w3-center'><br><h5>"+cardText+"</h5></div><button class='w3-btn-block w3-green' onclick='pickQuestion();'>Swap <i class='fa fa-refresh'></i></button></div>";
     document.getElementById("qu").innerHTML = newElm;
     document.getElementById("currentQuestion").style.left = window.innerWidth - document.getElementById("currentQuestion").outerWidth / 2;
 }
@@ -50,7 +50,7 @@ function pickCards(){
         card = cards[i];
         cardText = card.text.replaceAll("_", "<i>blank</i>");
         cardId = card.id;
-        var newElm = "<div id='"+cardId+"' class='w3-card-4 w3-light-grey w3-margin l' style='width:80%;max-width:350px;'><div class='w3-container w3-center'><br><h5>"+cardText+"</h5></div><button class='w3-btn-block w3-blue'>Choose</button></div>";
+        var newElm = "<div id='"+cardId+"' class='w3-card-4 w3-light-grey w3-margin card' style='width:80%;max-width:350px;'><div class='w3-container w3-center'><br><h5>"+cardText+"</h5></div><button class='w3-btn-block w3-blue'>Choose</button></div>";
         document.getElementById("ans").innerHTML += newElm;
     }
     
