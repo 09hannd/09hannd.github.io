@@ -16,15 +16,17 @@ body{
 
 h1{
     font-family: Bebas;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    text-align:center;
 }
 
-/*
-#currentQuestion{
-    position: fixed;
-    width:20%;
-    height:20%;
-    background: transparent;
-    left:50%;
-    margin-left: -10%;
+#content{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    text-align:center;
 }
-*/
