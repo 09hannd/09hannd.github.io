@@ -40,7 +40,7 @@ function pickCards(){
     var cards = Array();
     for(var i = 0; i < 5; i++){
         var card = generateCard();
-        while(card.cardType == "Q"){
+        while(card.cardType == "Q" && cards.indexOf(card) > -1){
             card = generateCard();
         }
         cards.push(card);
