@@ -1,7 +1,7 @@
 /*
 alpha code to write to database.
 This is gonna take some time!
-*/
+
 
 $(document).ready(function(){
     $("testButton").click(function(){
@@ -15,3 +15,4 @@ $(document).ready(function(){
         });
     });
 });
+*/
