@@ -1,3 +1,4 @@
+window.title = "0.0.1.8";
 String.prototype.replaceAll = function(search, replacement) {
     var target = this;
     return target.replace(new RegExp(search, 'g'), replacement);
@@ -42,12 +43,13 @@ function generateCard(){
     return card;
 }
 
-function pickCards(){
+function pickCards(){    
     var cards = Array();
     for(var i = 0; i < 5; i++){
-        var card = generateCard();
-        while(card.cardType == "A"){
+        var isAnswer = false;
+        while(!isAnswer){
             card = generateCard();
+            if(card.cardType == "A")isAnswer = true;
         }
         cards.push(card);
     }
