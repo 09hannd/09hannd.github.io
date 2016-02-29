@@ -7,11 +7,11 @@ alert("writeDb.js loaded");
 function sendData(){
      alert("Clicked");
      $.post("send.php",
-    {
-        type: "A",
-        val: "answer"
-    },
-    function(data, status){
-        alert(data);
-    });
+         {
+          type: "A",
+          val: "answer"
+        },
+        function(data,status){
+            alert(data);
+        });
 }
