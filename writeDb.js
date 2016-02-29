@@ -4,7 +4,7 @@ This is gonna take some time!
 */
 
 function sendData(){
-     $.post("/send.php",
+     $.post("send.php",
         {
           name: "Donald Duck",
           city: "Duckburg"
