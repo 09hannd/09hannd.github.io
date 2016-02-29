@@ -1,3 +1,7 @@
+<?php
+    require_once 'game.php';
+?>
+
 <html>
 <head>
     <title>latest alpha 0.0.1.8</title>
@@ -11,7 +15,7 @@
     </head>
 <body>
     <h1><u>The art of cards</u></h1>
-    <div id="testButton" onclick="sendData();" style="position:absolute;top:0;left:0;width:100px;height:100px;background:blue;">click</div>
+    <div id="testButton" style="position:absolute;top:0;left:0;width:100px;height:100px;background:orange;"><?php echo $gamestats; ?></div>
     <div id="content">
         <div id="qu"></div>
         <div id="ans"></div>
@@ -19,7 +23,6 @@
     </div>
     
     <script src="script.js"></script>
-    <script src="writeDb.js"></script>
 </body>
      
 </html>
