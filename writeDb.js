@@ -9,7 +9,7 @@ function sendData(){
      $.post("send.php",
     {
         type: "A",
-        a: "answer"
+        va;: "answer"
     },
     function(data, status){
         alert(data);
