@@ -7,7 +7,6 @@ function randInt(min,max){
     return Math.floor(Math.random()*(max-min+1)+min);
 }
 
-
 var cards = [];
 var playedQuestions = []
 
@@ -43,8 +42,6 @@ function generateCard(){
     return card;
 }
 
-
-
 function pickCards(){
     var cards = Array();
     for(var i = 0; i < 5; i++){
@@ -62,8 +59,6 @@ function pickCards(){
         var newElm = "<div id='"+cardId+"' class='w3-card-4 w3-light-grey w3-margin card' style='width:80%;max-width:350px;'><div class='w3-container w3-center'><br><h5>"+cardText+"</h5></div><button class='w3-btn-block w3-blue'>Choose</button></div>";
         document.getElementById("ans").innerHTML += newElm;
     }
-    
-    
 }
 
 pickCards();
